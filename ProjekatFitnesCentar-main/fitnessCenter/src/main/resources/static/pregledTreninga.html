@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Treninzi koji su u ponudi</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/treninzi.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    h1,h2,h3,h4,h5,h6 {
+        font-family: "Oswald";
+        text-align: center;
+    }
+    body {font-family: "Open Sans"}
+    .container{
+        align-content: center;
+        align-self: center;
+        align-items: center;
+
+        text-align: center;
+    }
+    .table{
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+</style>
+<body>
+<div class="w3-content" style="max-width:1600px">
+
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>FITNESS CENTER</b></h1>
+        <h6>Dobrodošli na stranicu fitness centra <span class="w3-tag"> BE FIT</span></h6>
+    </header>
+</div>
+<div class="container">
+    <div class="page-header">
+        <h2>Treninzi u našoj ponudi</h2>
+    </div>
+    <div >
+        <div class="container" >
+            <table id="pregledTreninga" class="table table-striped table-hover table-bordered ">
+                <thead class="thead">
+                <tr>
+                    <th colspan="6" class="bg-primary text-center">Treninzi</th>
+                </tr>
+                </thead>
+                <button  id="sortNaziv" type="button" class="btn btn-outline-info">Sortiraj po nazivu treninga</button>
+                <button  id="sortTipTreninga" type="button" class="btn btn-outline-info">Sortiraj po tipu treninga</button>
+
+                <tbody>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Opis</th>
+                    <th>Tip</th>
+                    <th>Trajanje</th>
+
+                </tr>
+
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

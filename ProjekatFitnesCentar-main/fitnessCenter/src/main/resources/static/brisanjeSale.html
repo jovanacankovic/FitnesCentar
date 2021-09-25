@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uklanjanje sale iz fitnes centra</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/brisanjeSale.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/table.css"></link>
+</head>
+<style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    .container{
+        align-content: center;
+        align-self: center;
+        align-items: center;
+
+        text-align: center;
+    }
+    ul#hl{
+        text-align: center;
+    }
+    ul#hl{
+        display: inline;
+    }
+    h2{
+        text-align: center;
+    }
+
+
+
+</style>
+<body>
+
+<div class="header">
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>FITNESS CENTER</b></h1>
+        <h6>Dobrodošli na stranicu fitness centra <span class="w3-tag"> BE FIT</span></h6>
+    </header>
+</div>
+<div>
+    <h2>Pregled i brisanje sala u fitnes centru</h2>
+
+    <div class="container">
+        <table id="sale" class="display" >
+            <tr>
+                <th>Id sale</th>
+                <th>Naziv</th>
+                <th>Kapacitet</th>
+                <th>Fitnes centar id</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="modal-dialog text-center">
+    <button id="obrisi">Obrisi</button>
+</div>
+
+</body>
+</html>

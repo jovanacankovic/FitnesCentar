@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodavanje sale u fitnes centar</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/dodavanjeSale.js"></script>
+</head>
+<style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    .container{
+        align-content: center;
+        align-self: center;
+        align-items: center;
+
+        text-align: center;
+    }
+</style>
+<body>
+<header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>FITNESS CENTER</b></h1>
+    <h6>Dobrodošli na stranicu fitness centra <span class="w3-tag"> BE FIT</span></h6>
+</header>
+</div>
+<div class="container">
+
+    <div class="card card-image" >
+        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+            <div class="py-5">
+                <h3><strong>Dodavanje sale u fitnes centar</strong></h3>
+                <form id="sale">
+
+                    <div class="form-group1">
+                        <h5 for="naziv" >Naziv:</h5>
+                        <input id="naziv" type="text"  class="registar" placeholder="Naziv">
+                    </div>
+                    <div class="form-group1">
+                        <h5 for="idCentra">Id fitnes centra:</h5>
+                        <input id="idCentra" type="text" class="registar" placeholder="Id centra">
+                    </div>
+                    <div class="form-group1">
+                        <h5 for="kapacitet">Kapacitet sale:</h5>
+                        <input id="kapacitet" type="text" class="registar" placeholder="Kapacitet sale">
+                    </div>
+
+                    <button id="formBetn"
+                            class="btn btn-primary btn-lg btn-block"
+                            type="submit" value="Register">Submit</button>
+                </form>
+
+
+                <img src="images/fc2.jpg" alt="FitnessCentar" style=";width:50%;height:50%;">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

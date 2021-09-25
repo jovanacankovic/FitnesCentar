@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>Fitness Center</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+
+
+    <script src="js/jquery.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        .header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        /* The grid container */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                    'header header header header header header'
+                    'left middle middle middle middle right'
+                    'footer footer footer footer footer footer';
+            /*grid-column-gap: 10px; */
+            text-align: center;
+        }
+
+        .left,
+        .middle,
+        .right {
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Style the left column */
+        .left {
+            grid-area: left;
+            background-image: url("images/training1.jpg");
+        }
+
+        /* Style the middle column */
+        .middle {
+            grid-area: middle;
+            background-image: url("images/exterior.jpg");
+
+        }
+
+        /* Style the right column */
+        .right {
+            grid-area: right;
+            background-image: url("images/fc.jpg");
+
+        }
+
+        /* Style the footer */
+        .footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+        .container{
+            grid-area: span;
+            text-align: center;
+            padding: 20px;
+        }
+
+        li{
+            font-size: x-large;
+        }
+
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .grid-container  {
+                grid-template-areas:
+                        'header header header header header header'
+                        'left left left left left left'
+                        'middle middle middle middle middle middle'
+                        'right right right right right right'
+                        'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>FITNESS CENTER</b></h1>
+        <h6>Dobrodošli na stranicu fitness centra <span class="w3-tag"> BE FIT</span></h6>
+    </header>
+</div>
+
+<div class="grid-container">
+
+    <div class="left" style="background-color:#aaa;">
+
+        <h3><b>Raznovrsni treninzi i posveceni treneri</b></h3>
+        <div class="grid-container">
+            <ul>
+                <li  ><a href="pregledTreninga.html">PREGLED TRENINGA</a></li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="middle" >
+        <h3><b>Lokacije sirom Srbije</b></h3>
+
+    </div>
+
+    <div class="right" style="background-color: #aaaaaa">
+        <h3><b>Pridruzite se sada</b></h3>
+        <div class="grid-container">
+            <ul>
+                <li  ><a href="prijava.html">LOGOVANJE</a></li>
+
+                <li ><a href="registracijaKorisnika.html">REGISTRACIJA </a></li>
+                <li ><a href="pretraga.html">REGISTRACIJA TRENERA </a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="grid-container">
+    <div class="container">
+        <h3>Yoga,pilates,kardio,cross-fit...</h3>
+        <img src="images/yoga.jpg" height="230" width="270">
+        <img src="images/cardio.jpg" height="230" width="300">
+        <img src="images/fc2.jpg" height="230" width="300">
+        <img src="images/pilates.jpg" height="230" width="300">
+        <img src="images/crossfit.jpg" height="230" width="290">
+
+
+    </div>
+    <div class="footer">
+
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Na vrh</a>
+
+
+    </div>
+</div>
+
+</body>
+</html>
